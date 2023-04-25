@@ -3,40 +3,25 @@
 
 # 2.目录结构
 ```
-│  .gitignore
-│  docker-compose.yml
-│  readme.md
-├─chineseorc
-│      init.sh
+├── README.md
+├── chineseocr
+|   ├── Dockerfile
+|   ├── chineseocr_lite
+|   └── init.sh
+└── docker-compose.yml
 ```
-其中`.docker`目录不是必须的，是配合docker-desktop一起用的，一个python的开发环境
 
-其中`docker-compose.yml`文件中`networks`的定义，为了与其他`docker-compose.yml`网络互通，使用了外部网络。如果不需要多个docker-compose互通，可以修改一下
-```
-version: '3'
-networks:
-  web-network:
-
-services:
-  ocr-server:
-    ...
-    networks:
-      - web-network
-```
 # 3.获取项目代码
 ```
 cd chineseorc
 #默认分支，即 main
-git clone git@github.com:52lu/chinese-ocr-lite.git
+git clone https://github.com/52lu/chinese-ocr-lite.git
 ```
 
 
 
 # 4.启动服务
 ```
-# 创建网络
-docker network create web-network
-
 # 启动
 docker-compose up -d
 ```
