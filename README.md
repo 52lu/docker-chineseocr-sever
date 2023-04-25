@@ -1,5 +1,5 @@
 # 1.介绍
-基于[chineseocr_lite](https://github.com/DayBreak-u/chineseocr_lite)快速搭建ocr服务，按照步骤即可直接部署使用，项目中对身份证OCR识别进行了简单的二次开发，身份证上传需要(横着)，对竖着上传支持度不好；
+基于[chineseocr_lite](https://github.com/DayBreak-u/chineseocr_lite)，使用docker-compose快速搭建ocr服务，免去部署难题，项目中对身份证OCR识别进行了简单的二次开发，身份证照片最好是横着上传，对竖着上传身份证识别度不好；
 
 # 2.目录结构
 ```
