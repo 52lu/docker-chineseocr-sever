@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+  backend:
+    driver: bridge
+
+services:
+  chineseocr:
+    build: ./chineseocr
+    command: sh /data/init.sh
+    tty: true
+    ports:
+      - "8089:8089"
+    networks:
+      - backend

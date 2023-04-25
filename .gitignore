@@ -1,0 +1,7 @@
+.idea
+.env
+.DS_Store
+
+chineseocr/*
+!chineseocr/Dockerfile
+!chineseocr/init.sh
