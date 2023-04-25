@@ -6,16 +6,25 @@
 ├── README.md
 ├── chineseocr
 |   ├── Dockerfile
-|   ├── chineseocr_lite
 |   └── init.sh
 └── docker-compose.yml
 ```
 
 # 3.获取项目代码
 ```
-cd chineseorc
-#默认分支，即 main
-git clone https://github.com/52lu/chinese-ocr-lite.git
+# 切到chineseorc目录
+$ cd chineseorc
+
+# 默认分支，即 main
+$ git clone https://github.com/52lu/chinese-ocr-lite.git
+
+# 克隆后代码目录展示
+├── README.md
+├── chineseocr
+|   ├── Dockerfile
+|   ├── chineseocr_lite
+|   └── init.sh
+└── docker-compose.yml
 ```
 
 
