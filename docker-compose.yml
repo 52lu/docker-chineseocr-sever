@@ -7,6 +7,7 @@ networks:
 services:
   chineseocr:
     build: ./chineseocr
+    restart: always
     command: sh /data/init.sh
     tty: true
     ports:
