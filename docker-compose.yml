@@ -12,5 +12,7 @@ services:
     tty: true
     ports:
       - "8089:8089"
+    volumes:
+      - ./volumes:/data/chineseocr_lite/backend/logs
     networks:
       - backend
